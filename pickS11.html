@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เลือกไพ่ของคุณ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      font-size: 20px;
+      background: #fff;
+      color: #333;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      margin-bottom: 2rem;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      font-size: 18px;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .card button:hover {
+      background-color: #1976D2;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>เลือกไพ่ 1 กองที่คุณรู้สึกเชื่อมโยง</h1>
+
+  <div class="cards">
+    <div class="card">
+      <img src="PNGs/1541377997.png" alt="กองที่ 1">
+      <button onclick="goToPay(1)">กองที่ 1</button>
+	<script>
+  function goToPay(cardNumber) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const question = urlParams.get('question');
+    const encodedQuestion = encodeURIComponent(question);
+    window.location.href = `pay.html?question=${encodedQuestion}&card=${cardNumber}`;
+  }
+	</script>
+
+    </div>
+    <div class="card">
+      <img src="PNGs/1541378093.png" alt="กองที่ 2">
+      <button onclick="selectCard(2)">กองที่ 2</button>
+    </div>
+    <div class="card">
+      <img src="PNGs/1541378161.png" alt="กองที่ 3">
+      <button onclick="selectCard(3)">กองที่ 3</button>
+    </div>
+  </div>
+
+  <script>
+    function selectCard(number) {
+      // ส่งผู้ใช้ไปหน้าจ่ายเงินหรือแสดงผลลัพธ์
+      // สามารถแก้ path ด้านล่างเป็นหน้า pay.html หรือ result.html ได้
+      window.location.href = `pay.html?deck=${number}`;
+    }
+  </script>
+
+</body>
+</html>
