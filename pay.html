@@ -45,6 +45,18 @@
     a:hover {
       text-decoration: underline;
     }
+    .payment-method {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+    }
+    .payment-method h4 {
+      font-weight: bold;
+    }
+    .payment-method p {
+      font-size: 18px;
+    }
   </style>
 </head>
 <body>
@@ -54,16 +66,22 @@
     <p id="questionBox">กำลังโหลดคำถาม...</p>
 
     <h3>📱 สแกนจ่ายผ่าน QR Code</h3>
-    <img src="QRcodepay.jpg" class="qr" alt="QR สำหรับชำระเงิน">
+    <img src="PNGs/qrcode.png" class="qr" alt="QR สำหรับชำระเงิน">
 
-    <p>กรุณาแนบสลิปเพื่อเป็นการสนับานุนเว็บไซต์และคำทำนาย </p>
-	<p><strong>คำถามละ 19.- เท่านั้น</strong></p>
-	<p>ธนาคารกรุงไทย 6619838928 วนิดา บ. </p>
+    <p>กรุณาแนบสลิปเพื่อยืนยัน </p>
+    <p> <strong>คำถามละ 19.- เท่านั้น</strong></p>
+
+    <div class="payment-method">
+      <h4>ช่องทางการชำระเงิน:</h4>
+      <p>ธนาคารกรุงไทย: เลขที่บัญชี 6619838928 (วนิดา บ.)</p>
+      <p>True Money Wallet: <a href="https://tmn.app.link/GIaFetnvlSb" target="_blank">คลิกที่นี่เพื่อชำระเงิน</a></p>
+    </div>
 
     <p>👉 <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2ICSIri6FJaEIce-k0k6QvH0x28Fag0Y8pPZdqywnGYciRA/viewform?usp=sf_link" target="_blank">
     คลิกที่นี่เพื่อแนบสลิป</a></p>
 
     <button class="blue-button" onclick="goToResult()">ยืนยัน & ดูคำทำนาย</button>
+	<a href="index.html" class="button">คำถามอื่นๆ</a>
   </div>
 
   <script>
@@ -74,7 +92,7 @@
 
     function goToResult() {
       alert("หากแนบสลิปเรียบร้อยแล้ว กำลังพาไปดูคำทำนาย...");
-      window.location.href = `results11.html?question=${encodeURIComponent(question)}&card=${card}`;
+      window.location.href = `resultS11.html?question=${encodeURIComponent(question)}&card=${card}`;
     }
   </script>
 
