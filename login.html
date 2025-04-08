@@ -110,8 +110,11 @@
   </div>
 
   <script>
-    const correctUsername = "admin";
-    const correctPassword = "123456";
+    const validUsers = [
+      { username: "admin", password: "1234" },
+      { username: "user1", password: "abcd" },
+      { username: "guest", password: "guest123" }
+    ];
 
     function togglePassword() {
       const pwd = document.getElementById("password");
@@ -129,7 +132,7 @@
         } else {
           sessionStorage.setItem("loggedIn", "true");
         }
-        window.location.href = "pick.html"; // เปลี่ยนเป็นหน้าแรกหลังเข้าสู่ระบบ
+        window.location.href = "index.html"; // เปลี่ยนเป็นหน้าแรกหลังเข้าสู่ระบบ
       } else {
         document.getElementById("error-msg").textContent = "ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง";
       }
