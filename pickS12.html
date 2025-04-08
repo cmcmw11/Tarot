@@ -116,22 +116,22 @@
 
     <div class="cards">
       <div class="card">
-        <a href="payS11.html?card=1">
-          <img src="./Greek98741764/04_ Poseido.png" alt="กองที่ 1">
+        <a href="LoadingS21.html?card=1">
+          <img src="04_ Poseido.png" alt="กองที่ 1">
         </a>
-        <button onclick="goToPay(1)">กองที่ 1</button>
+        <button onclick="goToLoading(1)">กองที่ 1</button>
       </div>
       <div class="card">
-        <a href="payS11.html?card=2">
-          <img src="./Greek98741764/05_ Apollo.png" alt="กองที่ 2">
+        <a href="LoadingS22.html?card=2">
+          <img src="05_ Apollo.png" alt="กองที่ 2">
         </a>
-        <button onclick="goToPay(2)">กองที่ 2</button>
+        <button onclick="goToLoading(2)">กองที่ 2</button>
       </div>
       <div class="card">
-        <a href="payS11.html?card=3">
-          <img src="./Greek98741764/06_ Artemis.png" alt="กองที่ 3">
+        <a href="LoadingS23.html?card=3">
+          <img src="06_ Artemis.png" alt="กองที่ 3">
         </a>
-        <button onclick="goToPay(3)">กองที่ 3</button>
+        <button onclick="goToLoading(3)">กองที่ 3</button>
       </div>
     </div>
 
@@ -143,7 +143,7 @@
       const urlParams = new URLSearchParams(window.location.search);
       const question = urlParams.get('question') || '';
       const encodedQuestion = encodeURIComponent(question);
-      window.location.href = `payS12.html?question=${encodedQuestion}&card=${cardNumber}`;
+      window.location.href = `LoadingS21.html?question=${encodedQuestion}&card=${cardNumber}`;
     }
   </script>
 
