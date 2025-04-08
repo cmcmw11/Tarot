@@ -2,45 +2,71 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>เข้าสู่ระบบ</title>
+  <title>เว็บดูดวงความรักสำหรับคนโสด</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Sarabun', sans-serif;
-      background: #f9f9f9;
+      background-color: #fff0f5;
+      margin: 0;
+      padding: 1rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
+      min-height: 100vh;
     }
 
-    .login-box {
-      background: #fff;
+    .container {
+      max-width: 400px;
+      width: 100%;
+      background-color: #ffffff;
       padding: 2rem;
-      border-radius: 16px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
 
-    h2 {
-      margin-bottom: 1.5rem;
+    h1 {
+      color: #d63384;
+      font-size: 24px;
+      margin-bottom: 1rem;
     }
 
-    input[type="text"],
-    input[type="password"] {
-      width: 100%;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      border: 1px solid #ccc;
+    h2 {
+      margin-top: 1.5rem;
+      font-size: 20px;
+    }
+
+    p {
       font-size: 16px;
-      box-sizing: border-box;
+      line-height: 1.6;
+      margin: 0.5rem 0;
+    }
+
+    .line-button {
+      margin-top: 1.5rem;
+    }
+
+    .note {
+      margin-top: 2rem;
+      font-size: 14px;
+      color: #666;
     }
 
     .input-group {
       position: relative;
       margin-bottom: 1rem;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 0.5rem 3rem 0.5rem 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      box-sizing: border-box;
     }
 
     .show-password-btn {
@@ -51,9 +77,9 @@
       background: none;
       border: none;
       color: #0077cc;
-      font-size: 14px;
+      font-size: 12px;
       cursor: pointer;
-      padding: 0;
+      z-index: 2;
     }
 
     .remember {
@@ -84,13 +110,20 @@
       font-size: 14px;
       margin-top: 0.5rem;
     }
+
+    img {
+      vertical-align: middle;
+    }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>💕 ยินดีต้อนรับสู่เว็บดูดวงความรัก สำหรับคนโสด 💕</h1>
+    <p>อยากรู้ว่าความรักครั้งต่อไปจะมาเมื่อไหร่?</p>
+    <p>เขาคนนั้นคิดยังไงกับคุณ? หรือทำไมความรักถึงยังไม่มาสักที...</p>
+    <p>เพียงเลือกไพ่ แล้วรอฟังคำทำนายจากไพ่ความรักที่คุณเลือกเอง!</p>
 
-  <div class="login-box">
     <h2>เข้าสู่ระบบ</h2>
-
     <div class="input-group">
       <input type="text" id="username" placeholder="ชื่อผู้ใช้">
     </div>
@@ -107,10 +140,22 @@
 
     <button onclick="login()">เข้าสู่ระบบ</button>
     <div id="error-msg" class="error"></div>
+
+    <div class="line-button">
+      <p>สอบถามเพิ่มเติมหรือพูดคุยกับแอดมินได้ทางไลน์:</p>
+      <a href="https://lin.ee/d2jMyVL" target="_blank">
+        <img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0">
+      </a>
+    </div>
+
+    <div class="note">
+      🧿 หลังจากเข้าสู่ระบบสำเร็จ<br>
+      คุณจะถูกพาไปยังหน้าเลือกคำถามโดยอัตโนมัติค่ะ 💌
+    </div>
   </div>
 
   <script>
-    const validUsers = [
+    const users = [
       { username: "admin", password: "1234" },
       { username: "user1", password: "abcd" },
       { username: "guest", password: "guest123" }
@@ -118,26 +163,40 @@
 
     function togglePassword() {
       const pwd = document.getElementById("password");
-      pwd.type = pwd.type === "password" ? "text" : "password";
+      const btn = document.querySelector(".show-password-btn");
+
+      if (pwd.type === "password") {
+        pwd.type = "text";
+        btn.textContent = "ซ่อนรหัส";
+      } else {
+        pwd.type = "password";
+        btn.textContent = "แสดงรหัส";
+      }
     }
 
     function login() {
-      const user = document.getElementById("username").value;
-      const pass = document.getElementById("password").value;
+      const usernameInput = document.getElementById("username").value.trim();
+      const passwordInput = document.getElementById("password").value.trim();
       const remember = document.getElementById("remember").checked;
 
-      if (user === correctUsername && pass === correctPassword) {
+      const userFound = users.find(u => u.username === usernameInput && u.password === passwordInput);
+
+      if (userFound) {
         if (remember) {
           localStorage.setItem("loggedIn", "true");
         } else {
           sessionStorage.setItem("loggedIn", "true");
         }
-        window.location.href = "index.html"; // เปลี่ยนเป็นหน้าแรกหลังเข้าสู่ระบบ
+        window.location.href = "index.html"; // เปลี่ยนเป็นหน้าเลือกคำถามจริงๆ
       } else {
         document.getElementById("error-msg").textContent = "ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง";
       }
     }
-  </script>
 
+    // ถ้าล็อกอินแล้ว ให้ redirect ไปหน้า index.html
+    if (localStorage.getItem("loggedIn") || sessionStorage.getItem("loggedIn")) {
+      window.location.href = "index.html";
+    }
+  </script>
 </body>
 </html>
