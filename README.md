@@ -12,6 +12,6 @@
 <script>
     // ให้ทำการโหลดแล้วไปที่หน้า login.html หลังจาก 2 วินาที
     setTimeout(function() {
-        window.location.href = 'login.html'; // ไปที่หน้า login
-    }, 2000); // 2 วินาที
+        window.location.href = 'home/login.html'; // ไปที่หน้า login
+    }, 3000); // 3 วินาที
 </script>
