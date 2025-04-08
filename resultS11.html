@@ -84,6 +84,12 @@
       <button onclick="window.print();" class="button">พิมพ์คำทำนาย</button>
     </div>
   </div>
+<script>
+  const loggedIn = localStorage.getItem("loggedIn") === "true" || sessionStorage.getItem("loggedIn") === "true";
+  if (!loggedIn) {
+    window.location.href = "login.html";
+  }
+</script>
 
 </body>
 </html>
