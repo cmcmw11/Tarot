@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>กำลังโหลดคำทำนาย...</title>
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #f9f9f9;
+      color: #333;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div>🔮 กำลังโหลดคำทำนายของคุณ...</div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const card = urlParams.get('card');
+
+    setTimeout(() => {
+      window.location.href = `resultS23.html?card=${card}`;
+    }, 3000); // 3 วินาที
+  </script>
+</body>
+</html>
