@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>คำทำนายความรัก</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      font-size: 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      padding: 2rem;
+    }
+    .loading {
+      font-size: 24px;
+      color: #d63384;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .result {
+      display: none;
+    }
+    img.card-img {
+      max-width: 150px;
+      margin: 1rem;
+      display: inline-block;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    p {
+      color: #666;
+      line-height: 1.6;
+      text-align: left;
+     }
+    .button {
+      display: inline-block;
+      background-color: white;
+      color: #333;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      border: 2px solid #333;
+      transition: background-color 0.3s;
+      margin-top: 2rem;
+    }
+    .button:hover {
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Loading Section -->
+    <div id="loadingSection">
+      <div class="loading">กำลังเปิดไพ่ กรุณารอสักครู่...</div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="resultSection" class="result">
+      <h1>คำทำนายจากการเลือกไพ่ กองที่ 1 </h1>
+      <h1>ลักษณะของคนรักในอนาคตของคุณเป็นอย่างไร?</h1>
+      
+      <h2>ไพ่ที่ได้:</h2>
+      <div>
+        <img src="MW_King_of_Cups.jpg" class="card-img" alt="MW_King_of_Cups">
+        <img src="MW_The_Moon.jpg" class="card-img" alt="MW_The_Moon">
+        <img src="MW_Six_of_Swords.jpg" class="card-img" alt="Two of Wands">
+      </div>
+      
+      <h2>เรื่องราวของความรักครั้งใหม่:</h2>
+      <p>คุณจะเจอเขาในวันที่คุณไม่ได้คาดหวังอะไรอีกแล้วจากความรัก... วันที่คุณไม่ได้มองหาใคร แต่กลับมีใครคนหนึ่งเข้ามาอย่างเงียบงัน เหมือนหมอกยามเช้าที่ค่อย ๆ ปกคลุมหัวใจที่เคยเหน็บหนาวของคุณ</p>
+
+      <p>เขาเป็นคนสุขุม นิ่งลึก และมีบางอย่างในดวงตาที่ทำให้คุณรู้สึกอบอุ่นอย่างแปลกประหลาด
+<span class="bold"> King of Cups</span> บอกว่าเขาเป็นผู้ชายที่อ่อนโยน เข้าอกเข้าใจผู้อื่น รู้วิธีปลอบโยนโดยไม่ต้องใช้คำพูดมากมาย เขาอาจจะเคยผ่านเรื่องราวยากลำบากในชีวิตมาไม่น้อย และนั่นแหละ…ที่ทำให้เขารู้ว่าความรักที่แท้จริงไม่ใช่การครอบครอง แต่คือการอยู่เคียงข้างโดยไม่ต้องพูดคำว่า “รัก” ซ้ำ ๆ</p>
+
+      <p>The Moon บ่งบอกว่าเขาอาจไม่ใช่คนเปิดเผยในตอนแรก เขาเหมือนบทกวีที่ต้องใช้เวลาอ่าน และคุณอาจไม่แน่ใจว่าเขาคิดอะไร แต่ถ้าคุณค่อย ๆ สัมผัส คุณจะรู้ว่าเขาเต็มไปด้วยอารมณ์ ความลึก และซื่อสัตย์อย่างเงียบงัน</p>
+
+      <p>เขาจะพาคุณออกจากอดีต <span class="bold"> (Six of Swords)</span> …ออกจากความเจ็บปวดและความกลัวที่คุณเคยมี เขาจะไม่เร่งเร้า แต่จะจับมือคุณไว้ และเดินไปด้วยกันอย่างช้า ๆ จนวันหนึ่งคุณหันกลับมาแล้วพบว่า “คุณหายเจ็บแล้ว…เพราะมีเขาอยู่ข้าง ๆ”</p>
+
+      
+      
+      <div>
+        <a href="index.html" class="button">คำถามอื่นๆ</a>
+        <button onclick="window.print();" class="button">พิมพ์คำทำนาย</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(function () {
+      document.getElementById('loadingSection').style.display = 'none';
+      document.getElementById('resultSection').style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
