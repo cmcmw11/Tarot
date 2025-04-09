@@ -117,35 +117,35 @@
 
     <div class="cards">
   <div class="card">
-  <a href="loadingS11.html?card=1">
+  <a href="resultS11.html?card=1">
     <img src="01_ Zeus.png" alt="กองที่ 1">
   </a>
-  <button onclick="goToLoading(1)">กองที่ 1</button>
+  <button onclick="goToResult(1)">กองที่ 1</button>
 </div>
   <div class="card">
-    <a href="LoadingS12.html?card=2">
+    <a href="resultS12.html?card=2">
       <img src="02_ Ares.png" alt="กองที่ 2">
     </a>
-    <button onclick="goToLoading(2)">กองที่ 2</button>
+    <button onclick="goToResult(2)">กองที่ 2</button>
   </div>
   <div class="card">
-    <a href="LoadingS13.html?card=3">
+    <a href="resultS13.html?card=3">
       <img src="03_ Athena.png" alt="กองที่ 3">
     </a>
-    <button onclick="goToLoading(3)">กองที่ 3</button>
+    <button onclick="goToResult(3)">กองที่ 3</button>
   </div>
 </div>
 
 <script>
-  function goToLoading(cardNumber) {
+  function goToResult(cardNumber) {
     let url = "";
 
     if (cardNumber === 1) {
-      url = "loadingS11.html?card=1";
+      url = "resultS11.html?card=1";
     } else if (cardNumber === 2) {
-      url = "LoadingS12.html?card=2";
+      url = "resultS12.html?card=2";
     } else if (cardNumber === 3) {
-      url = "LoadingS13.html?card=3";
+      url = "resultS13.html?card=3";
     }
 
     if (url) {
