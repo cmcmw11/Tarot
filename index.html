@@ -41,15 +41,25 @@
       font-size: 1.1rem;
     }
     ul {
-      padding-left: 1.2rem;
-      margin: 0;
-    }
+  padding-left: 0; /* ลบการเว้นช่องจากซ้าย */
+  margin: 0; /* ลบการเว้นขอบจากด้านนอก */
+  list-style-type: none; /* ลบจุดออกจากรายการ */
+}
+
     li {
       margin-bottom: 0.4rem;
     }
     a {
-      color: #2196F3;
+      color: #000; /* ตัวอักษรสีดำ */
       text-decoration: none;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    a:hover {
+      background-color: #d8edff; /* สีฟ้าตอนเอาเมาส์ไปคลิก */
+      color: #fff; /* เปลี่ยนสีตัวอักษรเป็นขาว */
     }
     .HOT {
       color: red;
@@ -72,7 +82,6 @@
       }
     }
   </style>
-  
 </head>
 <body>
   <div class="container">
@@ -194,12 +203,5 @@
       filterContent();
     });
   </script>
-  <script>
-  const loggedIn = localStorage.getItem("loggedIn") === "true" || sessionStorage.getItem("loggedIn") === "true";
-  if (!loggedIn) {
-    window.location.href = "login.html";
-  }
-</script>
-
 </body>
 </html>
