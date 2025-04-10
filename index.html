@@ -40,6 +40,53 @@
       margin-bottom: 0.5rem;
       font-size: 1.1rem;
     }
+/* กำหนดกรอบสีฟ้าอ่อนให้กับทุกคำถาม */
+ul li a {
+  display: block;
+  padding: 10px;
+  border: 2px solid #ffffff; /* กรอบสีฟ้าอ่อน */
+  border-radius: 8px;
+  background-color: #f0f8ff; /* พื้นหลังสีฟ้าอ่อน */
+  text-decoration: none;
+  color: black; /* ตัวหนังสือสีดำ */
+  transition: border-color 0.3s ease; /* เพิ่มการเปลี่ยนสีกรอบให้ลื่นไหล */
+  position: relative; /* สำหรับการวางตำแหน่งคำว่า HOT */
+}
+/* กำหนดกรอบพื้นสีฟ้าอ่อนให้กับทุกคำถาม ไม่มีเส้น */
+ul li a {
+  display: block;
+  padding: 10px;
+  background-color: #cae3f8; /* พื้นหลังสีฟ้าอ่อน */
+  border-radius: 8px;
+  text-decoration: none;
+  color: black; /* ตัวหนังสือสีดำ */
+  position: relative; /* ให้สามารถใช้ตำแหน่งได้ */
+  transition: background-color 0.3s ease; /* เพิ่มการเปลี่ยนสีพื้นหลังให้ลื่นไหล */
+}
+
+/* เปลี่ยนพื้นหลังเป็นสีฟ้าเข้มเมื่อ hover หรือคลิก */
+ul li a:hover, ul li a:active {
+  display: block;
+  background-color: #629bca; /* พื้นหลังสีฟ้าเข้ม */
+
+}
+
+/* เพิ่มคำว่า HOT ให้กระพริบและอยู่ในกรอบ */
+.HOT {
+  color: red;
+  font-size: 0.8em;
+  position: absolute;
+  top: 10px; /* ระยะห่างจากด้านบน */
+  right: 10px; /* ระยะห่างจากด้านขวา */
+  animation: blink 1s infinite;
+}
+
+/* การกระพริบของคำว่า HOT */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
     ul {
   padding-left: 0; /* ลบการเว้นช่องจากซ้าย */
   margin: 0; /* ลบการเว้นขอบจากด้านนอก */
@@ -58,7 +105,7 @@
       transition: background-color 0.3s, color 0.3s;
     }
     a:hover {
-      background-color: #d8edff; /* สีฟ้าตอนเอาเมาส์ไปคลิก */
+      background-color: #8db9dd; /* สีฟ้าตอนเอาเมาส์ไปคลิก */
       color: #fff; /* เปลี่ยนสีตัวอักษรเป็นขาว */
     }
     .HOT {
