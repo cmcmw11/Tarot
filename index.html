@@ -235,13 +235,11 @@ ul li a:hover, ul li a:active {
     });
   </script>
   <script>
-function checkLoginStatus() {
-    if (localStorage.getItem("loggedIn") || sessionStorage.getItem("loggedIn")) {
-      showMainContent(); // ถ้าล็อกอินแล้วให้แสดงเนื้อหาหลัก
-    } else {
-      document.getElementById("login-container").style.display = "block"; // แสดงหน้าเข้าสู่ระบบ
+    // ตรวจสอบว่าผู้ใช้ล็อกอินแล้วหรือยัง
+    if (!localStorage.getItem("loggedIn") && !sessionStorage.getItem("loggedIn")) {
+      // ถ้ายังไม่ได้ล็อกอินให้พาไปหน้า login.html
+      window.location.href = "login.html";
     }
-  }
-</script>
+  </script>
 </body>
 </html>
