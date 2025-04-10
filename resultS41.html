@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>คำทำนายความรัก</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      font-size: 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      padding: 2rem;
+    }
+    .loading {
+      font-size: 24px;
+      color: #d63384;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .result {
+      display: none;
+    }
+    img.card-img {
+      max-width: 150px;
+      margin: 1rem;
+      display: inline-block;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    p {
+      color: #666;
+      line-height: 1.6;
+      text-align: left;
+     }
+    .button {
+      display: inline-block;
+      background-color: white;
+      color: #333;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      border: 2px solid #333;
+      transition: background-color 0.3s;
+      margin-top: 2rem;
+    }
+    .button:hover {
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Loading Section -->
+    <div id="loadingSection">
+      <div class="loading">กำลังเปิดไพ่ กรุณารอสักครู่...</div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="resultSection" class="result" style="max-width: 800px; margin: auto; background: #fff0f5; border-radius: 16px; padding: 2rem; font-family: 'Sarabun', sans-serif; font-size: 18px; color: #333; box-shadow: 0 0 15px rgba(0,0,0,0.05);">
+  
+  <div style="background-color: #ffd6e7; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem;">
+    <h1 style="margin: 0; font-size: 24px; color: #b30059;">💖 คำทำนายจากการเลือกไพ่ กองที่ 3</h1>
+    <h2 style="margin: 0; font-size: 20px; color: #800040;">คนที่กำลังจะเข้ามาในชีวิตคุณคือใคร?</h2>
+  </div>
+      <div>
+        <img src="MW_The_Emperor.jpg" class="card-img" alt="MW_The_Hermit">
+        <img src="MW_Ten_of_Cups.jpg" class="card-img" alt="MW_The_Star">
+        <img src="MW_Queen_of_Swords.jpg" class="card-img" alt="MW_Strength">
+      </div>
+      
+      <h2>เรื่องราวของเขา:</h2>
+      <p>คุณอาจเจอเขาในช่วงเวลาที่ชีวิตคุณกำลังเปลี่ยนแปลง และเขาจะเข้ามาเหมือน “ผู้นำ” ที่ไม่เพียงแต่สร้างความมั่นใจให้คุณ แต่ยังพร้อมจะเป็น “ที่พักใจ” ที่มั่นคง</p>
+
+      <p>The Emperor เขาคือคนที่มีระเบียบ รู้จักวางแผน มีตำแหน่งในสังคมหรืออาชีพที่มั่นคง เขาอาจดูเข้าถึงยากในตอนแรก เพราะเขาไม่ใช่คนที่เปิดใจง่าย แต่ถ้าคุณเข้าถึงเขาได้... เขาจะปกป้องคุณทุกอย่าง</p>
+
+      <p>Ten of Cups บอกว่าเขาคือคนที่ต้องการครอบครัว ความรักที่มั่นคง และชีวิตที่เรียบง่ายแต่เปี่ยมสุข เขาจะอยากสร้างบ้านกับคุณ อยากวางรากฐาน อยากให้คุณเป็นคนสุดท้าย</p>
+
+      <p>Queen of Swords บอกว่าคุณจะรู้สึกว่าเขา “เคารพคุณ” มากกว่าที่เคยมีใครทำ ไม่ใช่แค่รัก… แต่ยอมรับในความคิด ความฝัน และความแข็งแกร่งของคุณ</p>
+<p><span class="bold">เขาจะเป็นทั้ง “ผู้นำ” และ “ผู้ฟัง” ในเวลาเดียวกัน</span></p>
+       <h3><span class="bold">สรุปลักษณะของเขา:</span></h3>
+      <h3><🧱 มั่นคง จริงจัง รู้เป้าหมาย</h3>
+      <h3>🏡 อยากสร้างครอบครัวที่อบอุ่น</h3>
+      <h3>👑 เคารพคุณในฐานะ “คู่ชีวิต” ไม่ใช่แค่คนรัก</h3>
+      
+      <div>
+        <a href="index.html" class="button">คำถามอื่นๆ</a>
+        <button onclick="window.print();" class="button">พิมพ์คำทำนาย</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(function () {
+      document.getElementById('loadingSection').style.display = 'none';
+      document.getElementById('resultSection').style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
