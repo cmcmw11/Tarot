@@ -50,7 +50,7 @@ ul li a {
   text-decoration: none;
   color: black; /* ตัวหนังสือสีดำ */
   transition: border-color 0.3s ease; /* เพิ่มการเปลี่ยนสีกรอบให้ลื่นไหล */
-  position: relative; /* สำหรับการวางตำแหน่งคำว่า HOT */
+ 
 }
 /* กำหนดกรอบพื้นสีฟ้าอ่อนให้กับทุกคำถาม ไม่มีเส้น */
 ul li a {
@@ -69,22 +69,6 @@ ul li a:hover, ul li a:active {
   display: block;
   background-color: #629bca; /* พื้นหลังสีฟ้าเข้ม */
 
-}
-
-/* เพิ่มคำว่า HOT ให้กระพริบและอยู่ในกรอบ */
-.HOT {
-  color: red;
-  font-size: 0.8em;
-  position: absolute;
-  top: 10px; /* ระยะห่างจากด้านบน */
-  right: 10px; /* ระยะห่างจากด้านขวา */
-  animation: blink 1s infinite;
-}
-
-/* การกระพริบของคำว่า HOT */
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
 }
 
     ul {
