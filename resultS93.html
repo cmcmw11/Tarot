@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>คำทำนายความรัก</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      font-size: 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      padding: 2rem;
+    }
+    .loading {
+      font-size: 24px;
+      color: #d63384;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .result {
+      display: none;
+    }
+    img.card-img {
+      max-width: 150px;
+      margin: 1rem;
+      display: inline-block;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    p {
+      color: #666;
+      line-height: 1.6;
+      text-align: left;
+     }
+    .button {
+      display: inline-block;
+      background-color: white;
+      color: #333;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      border: 2px solid #333;
+      transition: background-color 0.3s;
+      margin-top: 2rem;
+    }
+    .button:hover {
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Loading Section -->
+    <div id="loadingSection">
+      <div class="loading">กำลังเปิดไพ่ กรุณารอสักครู่...</div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="resultSection" class="result" style="max-width: 800px; margin: auto; background: #fff0f5; border-radius: 16px; padding: 2rem; font-family: 'Sarabun', sans-serif; font-size: 18px; color: #333; box-shadow: 0 0 15px rgba(0,0,0,0.05);">
+  
+  <div style="background-color: #ffd6e7; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem;">
+    <h1 style="margin: 0; font-size: 24px; color: #b30059;">💖 คำทำนายจากการเลือกไพ่ กองที่ 3</h1>
+    <h2 style="margin: 0; font-size: 20px; color: #800040;">คนที่แอบชอบคุณอยู่คือใคร?💌</h2>
+  </div>
+      <div>
+        <img src="MW_King_of_Wands.jpg" class="card-img" alt="MW_The_Hermit">
+        <img src="MW_Knight_of_Swords.jpg" class="card-img" alt="MW_The_Star">
+        <img src="MW_Six_of_Cups.jpg" class="card-img" alt="MW_Strength">
+      </div>
+      
+      <h2>เขาคือคนที่...</h2>
+      <p>ไม่ใช่คนธรรมดา แต่เป็นพลังงานแบบ “ใจเต้นตึกตัก” เวลาเจอคุณ เขาอาจเคยจีบคุณผ่าน ๆ หรือพูดเล่น ๆ เหมือนไม่จริงจัง — แต่จริง ๆ แล้วเขากลัวการถูกปฏิเสธอย่างรุนแรง...
+
+        Knight of Wands บอกว่าเขาอาจมีภาพลักษณ์เจ้าชู้ สนุกสนาน ชอบแซว แต่เบื้องหลังกลับเป็น Nine of Swords — คนที่นอนไม่หลับเพราะคิดถึงคุณ คนที่เงียบ ๆ เมื่อคุณไม่ตอบกลับ คนที่มีความลังเลและเจ็บปวดกับความกลัวของตัวเองมากกว่าที่คุณคิด
+        
+        Six of Cups คือเขาอาจเป็นคนจากอดีต คนที่เคยอยู่ใกล้คุณมาก่อน อาจเคยคุยกันในช่วงสั้น ๆ หรือเคยแอบปิ๊งกันแล้วห่างหายไป เขายังจำได้แม้แต่รอยยิ้มเล็ก ๆ ของคุณในวันนั้น
+        </p>
+
+      <h2>คนคนนี้คือ…</h2>
+      <p>ใครบางคนที่คุณเคย “นึกถึงอยู่บ้าง”
+        และเขาก็ยัง “นึกถึงคุณอยู่ทุกวัน”
+        เขาอยากกลับมา... แต่กลัวว่าคุณจะเดินไปไกลแล้ว
+        เลยได้แค่ส่งใจไปทางสายลม
+        เงียบ ๆ และจริงใจ
+      </p>
+      <h2>🔥 มีเสน่ห์ ชอบแซว</h2>  
+      <h3>😔 แอบเศร้าเมื่อคุณไม่อยู่</h3>
+      <h3>📸 เคยรู้จักกันมาก่อน</h3>
+
+      <div>
+        <a href="index.html" class="button">คำถามอื่นๆ</a>
+        <button onclick="window.print();" class="button">พิมพ์คำทำนาย</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(function () {
+      document.getElementById('loadingSection').style.display = 'none';
+      document.getElementById('resultSection').style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
