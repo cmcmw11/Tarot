@@ -112,5 +112,12 @@
       document.getElementById('resultSection').style.display = 'block';
     }, 3000);
   </script>
+    <script>
+  const loggedIn = localStorage.getItem("loggedIn") === "true" || sessionStorage.getItem("loggedIn") === "true";
+  if (!loggedIn) {
+    window.location.href = "login.html";
+  }
+</script>
+
 </body>
 </html>
