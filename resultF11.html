@@ -107,10 +107,11 @@
   </div>
 
   <script>
-    setTimeout(function () {
-      document.getElementById('loadingSection').style.display = 'none';
-      document.getElementById('resultSection').style.display = 'block';
-    }, 3000);
+    // ตรวจสอบว่าผู้ใช้ล็อกอินแล้วหรือยัง
+    if (!localStorage.getItem("loggedIn") && !sessionStorage.getItem("loggedIn")) {
+      // ถ้ายังไม่ได้ล็อกอินให้พาไปหน้า login.html
+      window.location.href = "login.html";
+    }
   </script>
 </body>
 </html>
