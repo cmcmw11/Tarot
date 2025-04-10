@@ -250,5 +250,14 @@ ul li a:hover, ul li a:active {
       filterContent();
     });
   </script>
+  <script>
+function checkLoginStatus() {
+    if (localStorage.getItem("loggedIn") || sessionStorage.getItem("loggedIn")) {
+      showMainContent(); // ถ้าล็อกอินแล้วให้แสดงเนื้อหาหลัก
+    } else {
+      document.getElementById("login-container").style.display = "block"; // แสดงหน้าเข้าสู่ระบบ
+    }
+  }
+</script>
 </body>
 </html>
