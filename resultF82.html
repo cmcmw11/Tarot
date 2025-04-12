@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>คำทำนายความรัก</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      font-size: 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+    }
+    .loading {
+      font-size: 24px;
+      color: #8cbde5;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .result {
+      display: none;
+    }
+    img.card-img {
+      max-width: 150px;
+      margin: 1rem;
+      display: inline-block;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    p {
+      color: #666;
+      line-height: 1.6;
+      text-align: left;
+     }
+    .button {
+      display: inline-block;
+      background-color: white;
+      color: #333;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      border: 2px solid #333;
+      transition: background-color 0.3s;
+      margin-top: 2rem;
+    }
+    .button:hover {
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Loading Section -->
+    <div id="loadingSection">
+      <div class="loading">กำลังเปิดไพ่ กรุณารอสักครู่...</div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="resultSection" class="result" style="max-width: 800px; margin: auto; background: #e7f2f7; border-radius: 16px; padding: 2rem; font-family: 'Sarabun', sans-serif; font-size: 18px; color: #333; box-shadow: 0 0 15px rgba(0,0,0,0.05);">
+  
+  <div style="background-color: #f4fcff; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem;">
+    <h1 style="margin: 0; font-size: 24px; color: #9fcaf1;">💖 คำทำนายจากการเลือกไพ่ กองที่ 2</h1>
+    <h2 style="margin: 0; font-size: 20px; color: #6573c7;">ถ้าเดินต่อ จะจบแบบไหน?</h2>
+  </div>
+      <div>
+        <img src="MW_Strength.jpg" class="card-img" alt="MW_The_Hermit">
+        <img src="MW_Knight_of_Pentacles.jpg" class="card-img" alt="MW_The_Star">
+        <img src="MW_Ten_of_Cups.jpg" class="card-img" alt="MW_Strength">
+      </div>
+      <p>กองนี้ให้กลิ่นอายของคนที่ผ่านอะไรด้วยกันมาเยอะ ต้องอดทน รอคอย ฝ่าฟัน แต่สุดท้ายมีโอกาสไปถึงความสุขที่อบอุ่น
+
+        Strength หมายถึง คุณจะต้องใช้ “พลังใจ” อย่างมากในการเดินทางต่อครั้งนี้ ต้องอดกลั้น พูดให้น้อย ฟังให้มาก และเข้าใจว่าอีกฝ่ายอาจไม่ได้เก่งเรื่องการแสดงความรู้สึกเหมือนคุณ
+        
+        Knight of Pentacles บอกว่าความสัมพันธ์นี้จะ “ช้า” แต่มั่นคง หากคุณไม่รีบร้อนจนเกินไป คนคนนี้อาจไม่ได้แสดงออกเก่ง แต่เขา "ทำจริง" ช้าแต่ชัวร์ มีโอกาสสร้างรากฐานความรักที่มั่นคงด้วยกันได้
+        
+        และไพ่สุดท้าย Ten of Cups คือไพ่แห่งครอบครัว ความอิ่มเอม ความสุขที่เรียบง่าย เป็นไปได้ว่าหากคุณอดทนผ่านช่วงทดสอบนี้ไปได้ คุณอาจได้พบกับคนที่สร้างบ้านเล็กๆ ในใจคุณได้จริงๆ</p>
+        <h2>ถ้าคุณเดินต่อ มันจะไม่ง่าย แต่มีโอกาสสูงมากที่จะกลายเป็นรักแท้ที่มั่นคง ขึ้นอยู่กับ “พลังใจ” และการรอของคุณ</h2>
+      <h2>🧘 ความอดทน</h2>  
+      <h2>🐢 ช้าแต่ชัวร์ </h2>
+      <h2>🏡 รักที่อบอุ่นและมั่นคง</h2>
+
+      <div>
+        <a href="index.html" class="button">คำถามอื่นๆ</a>
+        <button onclick="window.print();" class="button">พิมพ์คำทำนาย</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(function () {
+      document.getElementById('loadingSection').style.display = 'none';
+      document.getElementById('resultSection').style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
