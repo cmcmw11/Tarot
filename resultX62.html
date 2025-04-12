@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>คำทำนายความรัก</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      font-size: 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+    }
+    .loading {
+      font-size: 24px;
+      color: #1d2124;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .result {
+      display: none;
+    }
+    img.card-img {
+      max-width: 150px;
+      margin: 1rem;
+      display: inline-block;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    p {
+      color: #666;
+      line-height: 1.6;
+      text-align: left;
+     }
+    .button {
+      display: inline-block;
+      background-color: white;
+      color: #333;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      border: 2px solid #333;
+      transition: background-color 0.3s;
+      margin-top: 2rem;
+    }
+    .button:hover {
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Loading Section -->
+    <div id="loadingSection">
+      <div class="loading">กำลังเปิดไพ่ กรุณารอสักครู่...</div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="resultSection" class="result" style="max-width: 800px; margin: auto; background: #ffdbe1; border-radius: 16px; padding: 2rem; font-family: 'Sarabun', sans-serif; font-size: 18px; color: #333; box-shadow: 0 0 15px rgba(0,0,0,0.05);">
+  
+  <div style="background-color: #ffffff; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem;">
+    <h1 style="margin: 0; font-size: 24px; color: #fdd8db;">💖 คำทำนายจากการเลือกไพ่ กองที่ 2</h1>
+    <h2 style="margin: 0; font-size: 20px; color: #fd9e9e;">สิ่งที่คุณต้องเรียนรู้จากรักครั้งเก่า?>
+  </div>
+      <div>
+        <img src="MW_Page_of_Cups.jpg" class="card-img" alt="MW_The_Hermit">
+        <img src="MW_The_Tower.jpg" class="card-img" alt="MW_The_Star">
+        <img src="MW_Three_of_Swords.jpg" class="card-img" alt="MW_Strength">
+      </div>
+      <p>ความรักครั้งนั้นเริ่มด้วยความบริสุทธิ์ของใจ
+        คุณอาจเป็นคนที่มอบหัวใจให้เขาโดยไม่ลังเล
+        Page of Cups คือลมหายใจแรกของความรู้สึกดีๆ ที่มอบให้ใครสักคนเต็มหัวใจ
+        
+        แต่แล้วทุกอย่างพังทลายลงในแบบที่คุณไม่ทันตั้งตัว
+        The Tower ไม่ใช่แค่การเลิกรา…
+        แต่มันคือการล้มของโลกทั้งใบที่คุณสร้างไว้กับเขา
+        บางคนอาจถูกทรยศ บางคนถูกทิ้งกลางคัน
+        และหัวใจก็สลายอย่างไร้การเตรียมใจ (Three of Swords)
+        
+        แต่รู้ไหม? นี่คือหนึ่งในบทเรียนที่สำคัญที่สุดในชีวิต
+        คุณเรียนรู้ว่า “ความรักต้องมาคู่กับสติ”
+        ว่าความฝันที่สวยงามอาจไม่ใช่ความจริง
+        และคุณไม่ควรให้อีกคนเป็นศูนย์กลางของจักรวาล</p>
+        
+        <p2>รักต้องมีรากฐานที่แข็งแรง ไม่ใช่แค่ความรู้สึกชั่วคราว
+          คุณต้องรักแบบมีขอบเขต ไม่ใช่ฝากหัวใจไว้ทั้งหมด</p2>
+      <h2>🌱 ความใสซื่อที่แตกสลาย</h2>  
+      <h2>🌪️ การเปลี่ยนแปลงกระทันหัน </h2>
+      <h2>💔 หัวใจที่ร้าวเพื่อให้รู้ว่าเราควรปกป้องมันยังไง</h2>
+
+      <div>
+        <a href="index.html" class="button">คำถามอื่นๆ</a>
+        <button onclick="window.print();" class="button">พิมพ์คำทำนาย</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(function () {
+      document.getElementById('loadingSection').style.display = 'none';
+      document.getElementById('resultSection').style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
