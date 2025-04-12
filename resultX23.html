@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>คำทำนายความรัก</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      font-size: 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+    }
+    .loading {
+      font-size: 24px;
+      color: #1d2124;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .result {
+      display: none;
+    }
+    img.card-img {
+      max-width: 150px;
+      margin: 1rem;
+      display: inline-block;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    p {
+      color: #666;
+      line-height: 1.6;
+      text-align: left;
+     }
+    .button {
+      display: inline-block;
+      background-color: white;
+      color: #333;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      border: 2px solid #333;
+      transition: background-color 0.3s;
+      margin-top: 2rem;
+    }
+    .button:hover {
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Loading Section -->
+    <div id="loadingSection">
+      <div class="loading">กำลังเปิดไพ่ กรุณารอสักครู่...</div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="resultSection" class="result" style="max-width: 800px; margin: auto; background: #f8d0b9; border-radius: 16px; padding: 2rem; font-family: 'Sarabun', sans-serif; font-size: 18px; color: #333; box-shadow: 0 0 15px rgba(0,0,0,0.05);">
+  
+  <div style="background-color: #ffffff; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem;">
+    <h1 style="margin: 0; font-size: 24px; color: #fdd8db;">💖 คำทำนายจากการเลือกไพ่ กองที่ 3</h1>
+    <h2 style="margin: 0; font-size: 20px; color: #fd9e9e;">เราจะกลับมาเจอกันอีกไหม?</h2>
+  </div>
+      <div>
+        <img src="MW_Justice.jpg" class="card-img" alt="MW_The_Hermit">
+        <img src="MW_Four_of_Cups.jpg" class="card-img" alt="MW_The_Star">
+        <img src="MW_The_Star.jpg" class="card-img" alt="MW_Strength">
+      </div>
+      <p>คุณสองคนอาจจะจากกันไปเพราะ “บางอย่างที่ไม่สมดุล” หรือเพราะ “บางคำที่ไม่เคยพูดออกไป” แต่คำถามในหัวใจยังค้างอยู่… เหมือนดาวที่ไม่เคยดับในค่ำคืนที่ไร้จันทร์
+
+        Justice บอกว่า หากเคยมีอะไรค้างคา ใครบางคนอาจจะกลับมาเพื่อ “เคลียร์ใจ” หรือขอโทษเพื่อความยุติธรรมที่หัวใจสมควรได้รับ — ไม่ใช่เพื่อเริ่มใหม่ แต่อาจเพื่อปิดให้สมบูรณ์
+        
+        Four of Cups ชี้ว่า ขณะนี้ยังมีความลังเลในใจเขา เขายังไม่มั่นใจว่าจะกลับไป หรือเดินหน้าต่อ…แต่เขายังนึกถึงคุณในคืนที่เงียบที่สุด
+        
+        และ The Star คือความหวัง แม้ดูเลือนลาง แต่ไม่เคยหายไป คุณอาจได้พบกันอีกในวันที่หัวใจของคุณทั้งคู่มีแสงของตัวเอง ไม่ใช่เพื่อเติมเต็ม แต่เพื่อยิ้มให้กันอย่างอิสระ</p>
+        <h2>เขาอาจกลับมา ไม่ใช่เพื่อเริ่มต้นใหม่ แต่เพื่อเยียวยา และคืนความสงบให้ใจทั้งสอง — และบางที การเจอกันอีกครั้ง อาจเป็นของขวัญของการเติบโต</h2>
+      <h2>⚖️ ความสมดุล</h2>  
+      <h2>🌧️ ความรู้สึกที่ไม่ชัดเจน </h2>
+      <h2>🌟 ความหวังที่มี</h2>
+
+      <div>
+        <a href="index.html" class="button">คำถามอื่นๆ</a>
+        <button onclick="window.print();" class="button">พิมพ์คำทำนาย</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(function () {
+      document.getElementById('loadingSection').style.display = 'none';
+      document.getElementById('resultSection').style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
