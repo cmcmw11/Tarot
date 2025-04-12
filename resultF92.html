@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>คำทำนายความรัก</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      font-size: 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+    }
+    .loading {
+      font-size: 24px;
+      color: #8cbde5;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .result {
+      display: none;
+    }
+    img.card-img {
+      max-width: 150px;
+      margin: 1rem;
+      display: inline-block;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    p {
+      color: #666;
+      line-height: 1.6;
+      text-align: left;
+     }
+    .button {
+      display: inline-block;
+      background-color: white;
+      color: #333;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      border: 2px solid #333;
+      transition: background-color 0.3s;
+      margin-top: 2rem;
+    }
+    .button:hover {
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Loading Section -->
+    <div id="loadingSection">
+      <div class="loading">กำลังเปิดไพ่ กรุณารอสักครู่...</div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="resultSection" class="result" style="max-width: 800px; margin: auto; background: #e7f2f7; border-radius: 16px; padding: 2rem; font-family: 'Sarabun', sans-serif; font-size: 18px; color: #333; box-shadow: 0 0 15px rgba(0,0,0,0.05);">
+  
+  <div style="background-color: #f4fcff; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem;">
+    <h1 style="margin: 0; font-size: 24px; color: #9fcaf1;">💖 คำทำนายจากการเลือกไพ่ กองที่ 2</h1>
+    <h2 style="margin: 0; font-size: 20px; color: #6573c7;">เขาแอบมีคนอื่นไหม?</h2>
+  </div>
+      <div>
+        <img src="MW_King_of_Wands.jpg" class="card-img" alt="MW_The_Hermit">
+        <img src="MW_The_Hierophant.jpg" class="card-img" alt="MW_The_Star">
+        <img src="MW_Three_of_Cups.jpg" class="card-img" alt="MW_Strength">
+      </div>
+      <p>คนคนนี้เป็นคนมีเสน่ห์ เป็นที่ชื่นชมของคนรอบข้าง และเขารู้ว่าตัวเองมีพลังนั้น
+
+        King of Wands คือผู้ชายที่เต็มไปด้วยความมั่นใจ มีออร่าแรงดึงดูด มีคนเข้าหาเสมอ ซึ่งบางครั้งก็ไม่ปฏิเสธ ไม่ชัดเจนจนคนอื่นเข้าใจผิดได้ง่าย
+        
+        The Hierophant หมายถึงคนที่ให้ความสำคัญกับหน้าตาในสังคม หรือภาพลักษณ์ เขาอาจเป็นคนที่ไม่กล้าแสดงออกว่าอยู่ในความสัมพันธ์อย่างชัดเจน หรืออาจยังผูกพันกับใครบางคนในอดีตแบบลึกๆ อยู่
+        
+        Three of Cups เป็นไพ่แห่งการเฉลิมฉลอง การสังสรรค์ หรือความสัมพันธ์แบบ "มากกว่าสอง" ซึ่งในคำถามนี้ มันมีนัยว่ามี “บุคคลที่สาม” ที่อาจแฝงอยู่ในวงจรใกล้ๆ ตัวเขา — เพื่อน เพื่อนร่วมงาน หรือคนที่ยังมีปฏิสัมพันธ์แบบลึกซึ้ง
+        
+        </p>
+        <h2>เขาอาจยังไม่ได้แอบมีใครแบบจริงจัง แต่มีคนที่เข้าหาและเขาไม่ได้กันไว้ชัดเจน ซึ่งมีโอกาสพัฒนาไปในทางที่ไม่ปลอดภัยต่อคุณ</h2>
+      <h2>🎭 คนมีเสน่ห์</h2>  
+      <h2>🍷 มิตรภาพที่คลุมเครือ</h2>
+      <h2>🔺 ความสัมพันธ์ที่มากกว่าสอง
+
+      </h2>
+
+      <div>
+        <a href="index.html" class="button">คำถามอื่นๆ</a>
+        <button onclick="window.print();" class="button">พิมพ์คำทำนาย</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(function () {
+      document.getElementById('loadingSection').style.display = 'none';
+      document.getElementById('resultSection').style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
