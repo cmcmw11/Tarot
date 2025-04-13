@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>คำทำนายความรัก</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      font-size: 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+    }
+    .loading {
+      font-size: 24px;
+      color: #1d2124;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .result {
+      display: none;
+    }
+    img.card-img {
+      max-width: 150px;
+      margin: 1rem;
+      display: inline-block;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    p {
+      color: #666;
+      line-height: 1.6;
+      text-align: left;
+     }
+    .button {
+      display: inline-block;
+      background-color: white;
+      color: #333;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      border: 2px solid #333;
+      transition: background-color 0.3s;
+      margin-top: 2rem;
+    }
+    .button:hover {
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Loading Section -->
+    <div id="loadingSection">
+      <div class="loading">กำลังเปิดไพ่ กรุณารอสักครู่...</div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="resultSection" class="result" style="max-width: 800px; margin: auto; background: #ffdbe1; border-radius: 16px; padding: 2rem; font-family: 'Sarabun', sans-serif; font-size: 18px; color: #333; box-shadow: 0 0 15px rgba(0,0,0,0.05);">
+  
+  <div style="background-color: #ffffff; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem;">
+    <h1 style="margin: 0; font-size: 24px; color: #fdd8db;">💖 คำทำนายจากการเลือกไพ่ กองที่ 2</h1>
+    <h2 style="margin: 0; font-size: 20px; color: #fd9e9e;">รักเก่าคือบทเรียนหรือพรหมลิขิต?>
+  </div>
+      <div>
+        <img src="MW_The_Lovers.jpg" class="card-img" alt="MW_The_Hermit">
+        <img src="MW_Three_of_Swords.jpg" class="card-img" alt="MW_The_Star">
+        <img src="MW_Wheel_of_Fortune.jpg" class="card-img" alt="MW_Strength">
+      </div>
+      <p>คุณสองคนเจอกันในจังหวะที่เหมือนจะใช่
+        ดวงตาเขามองมาที่คุณแบบที่ไม่มีใครเคยมอง
+        การพูดคุยทุกคำเหมือนถูกสคริปต์ไว้โดยจักรวาล
+        ไพ่ The Lovers ไม่ใช่แค่ความรัก แต่มันคือการ "รู้สึกว่าเป็นบ้านของกันและกัน"
+        
+        แต่ความรู้สึกไม่เคยพอ หากเวลาไม่เข้าข้าง
+        Three of Swords คือหัวใจที่แตกออกแม้จะยังรัก
+        มันอาจมีคนอื่นเข้ามา มีระยะทาง หรือเพียงแค่ “จังหวะชีวิต” ที่ไม่ตรงกัน
+        และคุณก็ต้องยอมรับว่า… บางครั้งพรหมลิขิตก็มา "ผิดเวลา"
+        
+        ไพ่ Wheel of Fortune หมุนเข้ามาเตือนว่า ความรักก็เหมือนโชคชะตา
+        มันขึ้นอยู่กับการหมุนของเวลา การเลือกของแต่ละคน และโอกาสที่มีแค่ครั้งเดียว
+        คุณกับเขาอาจเป็นพรหมลิขิต… ที่ถูกกำหนดให้ “เรียนรู้การปล่อยมือ”</p>
+        
+        <p2>เขาคือพรหมลิขิตจริง ๆ
+          แต่พรหมลิขิตก็ไม่จำเป็นต้อง “จบด้วยการอยู่ด้วยกัน”
+          บางครั้ง คนที่ใช่ อาจแค่มาสะกิดหัวใจคุณให้เชื่อในรักอีกครั้ง</h2>
+      <h2>💘 หัวใจที่ตรงกัน</h2>
+      <h2>🕰️ เวลาไม่เป็นใจ</h2>
+      <h2>🎡 รักที่หมุนวนในโชคชะตา
+      </h2>
+
+      <div>
+        <a href="index.html" class="button">คำถามอื่นๆ</a>
+        <button onclick="window.print();" class="button">พิมพ์คำทำนาย</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(function () {
+      document.getElementById('loadingSection').style.display = 'none';
+      document.getElementById('resultSection').style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
