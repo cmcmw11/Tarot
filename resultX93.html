@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>คำทำนายความรัก</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      font-size: 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+    }
+    .loading {
+      font-size: 24px;
+      color: #1d2124;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .result {
+      display: none;
+    }
+    img.card-img {
+      max-width: 150px;
+      margin: 1rem;
+      display: inline-block;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    p {
+      color: #666;
+      line-height: 1.6;
+      text-align: left;
+     }
+    .button {
+      display: inline-block;
+      background-color: white;
+      color: #333;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      border: 2px solid #333;
+      transition: background-color 0.3s;
+      margin-top: 2rem;
+    }
+    .button:hover {
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Loading Section -->
+    <div id="loadingSection">
+      <div class="loading">กำลังเปิดไพ่ กรุณารอสักครู่...</div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="resultSection" class="result" style="max-width: 800px; margin: auto; background: #ffdbe1; border-radius: 16px; padding: 2rem; font-family: 'Sarabun', sans-serif; font-size: 18px; color: #333; box-shadow: 0 0 15px rgba(0,0,0,0.05);">
+  
+  <div style="background-color: #ffffff; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem;">
+    <h1 style="margin: 0; font-size: 24px; color: #fdd8db;">💖 คำทำนายจากการเลือกไพ่ กองที่ 3</h1>
+    <h2 style="margin: 0; font-size: 20px; color: #fd9e9e;">เขายังเฝ้าดูคุณอยู่หรือเปล่า?</h2>
+
+  </div>
+      <div>
+        <img src="MW_Six_of_Cups.jpg" class="card-img" alt="MW_The_Hermit">
+        <img src="MW_King_of_Wands.jpg" class="card-img" alt="MW_The_Star">
+        <img src="MW_Justice.jpg" class="card-img" alt="MW_Strength">
+      </div>
+      <p>ในเงาของความทรงจำ... เขายังจำทุกอย่างที่เป็นคุณ
+        Six of Cups บอกถึงภาพจำวัยเยาว์ ความหอมหวาน และอดีตที่ยังค้างอยู่ในใจ
+        เขาอาจไม่ได้เฝ้าดูคุณทุกวัน
+        แต่เขามักคิดถึงคุณในวันที่ลมเย็น ในเพลงเก่า ๆ ในของบางชิ้นที่ยังไม่เคยโยนทิ้ง
+        
+        King of Wands บอกว่าเขายังมีไฟในตัว
+        เขาเป็นคนที่ภายนอกดูมั่นใจ เข้มแข็ง และทำเหมือนว่าเขาโอเค
+        แต่ในใจ… เขาอยากรู้ว่า คุณลืมเขาไปหรือยัง
+        เขาไม่ใช่คนอ่อนโยน แต่เขาไม่เคยลืมว่าคุณเคยเป็น “ที่พักใจ”
+        
+        Justice มาพร้อมคำถามที่เขาเฝ้าถามตัวเอง
+        “เราจากกันไปเพราะอะไร”
+        “มันแฟร์ไหมสำหรับคุณ?”
+        เขาอยากให้คุณให้อภัย แม้จะไม่กล้าขอ
+        เขาเฝ้าดูคุณด้วยความรู้สึกผิด และหวังว่า... ถ้ามีโอกาส เขาจะพูดในสิ่งที่ยังค้างคา</p>
+        
+        <p>เขายังคิดถึงคุณ และยังเฝ้าดูคุณ
+          ไม่ใช่เพราะอยากย้อนกลับ แต่เพราะคุณคือ “รอยแผลที่เขาอยากเยียวยา”
+          เขาแค่ยังไม่กล้าพอจะหันกลับมาถามคุณตรง ๆ</p>
+      <h2>🍂 ภาพจำที่ยังฝังใจ</h2>
+      <h2>🔥 ไฟเก่าที่ยังอุ่น</h2>
+      <h2>⚖️ คำถามที่ยังรอคำตอบ
+      </h2>
+
+      <div>
+        <a href="index.html" class="button">คำถามอื่นๆ</a>
+        <button onclick="window.print();" class="button">พิมพ์คำทำนาย</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(function () {
+      document.getElementById('loadingSection').style.display = 'none';
+      document.getElementById('resultSection').style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
